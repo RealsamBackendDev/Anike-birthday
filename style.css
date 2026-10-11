@@ -686,7 +686,9 @@ body.lightbox-open { overflow: hidden; }
   max-height: 62vh;
   background: #2a0d16;
 }
+
 .copyright a {
+  color: inherit;
   text-decoration: none;
 }
 
