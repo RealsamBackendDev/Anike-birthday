@@ -259,16 +259,15 @@
   const musicLabel = $(".music-label", musicToggle);
   const audio = new Audio("assets/audio/scape-goat.mp3");
   audio.loop = true;
-  let audioAvailable = false;
-
   
-  audio.addEventListener("canplaythrough", () => {
-    audioAvailable = true;
-    musicToggle.hidden = false;
-  }, { once: true });
+    let audioAvailable = true;
+    
+  musicToggle.hidden = false;
   audio.addEventListener("error", () => {
-    musicToggle.hidden = true; 
+    audioAvailable = false;
+    musicToggle.hidden = true;
   });
+  audio.preload = "auto";
   audio.load();
 
   musicToggle.addEventListener("click", () => {
