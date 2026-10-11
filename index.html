@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="ANIKE — A Birthday Experience. A personal birthday website made with love." />
+  <title>ANIKE — A Birthday Experience ❤️</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+<base target="_blank">
+</head>
+<body>
+
+  <!-- Floating decorative hearts (background) -->
+  <div class="floating-hearts" aria-hidden="true"></div>
+
+  <!-- Progress indicator -->
+  <nav class="progress-indicator" aria-label="Experience progress">
+    <span class="progress-dot" data-step="0" aria-label="Welcome"></span>
+    <span class="progress-dot" data-step="1" aria-label="Birthday celebration"></span>
+    <span class="progress-dot" data-step="2" aria-label="Our story"></span>
+    <span class="progress-dot" data-step="3" aria-label="Birthday shoot"></span>
+    <span class="progress-dot" data-step="4" aria-label="Love letter"></span>
+    <span class="progress-dot" data-step="5" aria-label="Final surprise"></span>
+  </nav>
+
+  <!-- Optional music toggle (hidden if no audio file) -->
+  <button id="music-toggle" class="music-toggle" type="button" aria-pressed="false" hidden>
+    <span class="music-icon" aria-hidden="true">♪</span>
+    <span class="music-label">Play music</span>
+  </button>
+
+  <main id="main">
+
+    <!-- ================= SECTION 1: WELCOME ================= -->
+    <section class="experience-section section-welcome active" data-section="0" id="welcome" aria-labelledby="welcome-heading">
+      <div class="gold-ornament" aria-hidden="true">❦</div>
+      <p class="label">A LITTLE SOMETHING MADE WITH LOVE</p>
+      <h1 class="main-heading" id="welcome-heading">Hey, ANIKE. <span class="heart-inline" aria-hidden="true">❤️</span></h1>
+      <p class="supporting-message">
+        Today is all about you, my love.<br /><br />
+        But before your birthday begins, I made something special for you.<br /><br />
+        Something created with my own hands, a little creativity, and a whole lot of love.<br /><br />
+        Take your time, enjoy every moment, and remember that this little corner of the internet belongs to you.
+      </p>
+      <button class="btn btn-primary" id="btn-open-surprise" type="button">OPEN YOUR SURPRISE ♡</button>
+      <p class="tiny-note">Made with love, especially for you.</p>
+      <p class="tiny-note music-tip">Tip: press the ♪ button in the corner for the full experience. 🎵</p>
+    </section>
+
+    <!-- ================= SECTION 2: BIRTHDAY CELEBRATION ================= -->
+    <section class="experience-section section-birthday" data-section="1" id="birthday" aria-labelledby="birthday-heading">
+      <div class="gold-ornament" aria-hidden="true">🎂</div>
+      <p class="label">TODAY, WE CELEBRATE YOU</p>
+      <h2 class="main-heading" id="birthday-heading">HAPPY BIRTHDAY, ANIKE! <span class="heart-inline" aria-hidden="true">❤️</span></h2>
+      <p class="supporting-message">
+        Happy birthday to the girl who holds such a special place in my heart.<br /><br />
+        Today, I celebrate you — your beautiful existence, your personality, your dreams, your strength, and all the little things that make you who you are.<br /><br />
+        I hope this new chapter of your life brings you genuine happiness, peace of mind, beautiful opportunities, good health, growth, and countless reasons to smile.<br /><br />
+        You deserve to be celebrated, not just today, but in all the ordinary moments that make up your life.<br /><br />
+        And today, my love, I hope you feel just how special you are.
+      </p>
+      <div class="video-card" id="video-card">
+        <p class="label">ONE MORE THING, MY LOVE...</p>
+        <p class="video-intro">I recorded something for you. Press play. 🎥❤️</p>
+        <div class="video-frame" id="video-frame">
+          <video id="birthday-video" controls playsinline preload="metadata" poster="assets/images/poster.jpg" src="assets/video/birthday-video.mp4">
+            Your browser does not support the video player.
+          </video>
+        </div>
+        <p class="video-missing" id="video-missing" hidden>Your video message goes here. 🎥♡</p>
+      </div>
+      <button class="btn btn-primary" id="btn-to-story" type="button">LET'S MAKE A MEMORY ♡</button>
+      <div class="nav-row">
+        <button class="btn btn-ghost btn-back" type="button">← Back</button>
+      </div>
+    </section>
+
+    <!-- ================= SECTION 3: LOVE STORY & MEMORIES ================= -->
+    <section class="experience-section section-story" data-section="2" id="story" aria-labelledby="story-heading">
+      <p class="label">A LITTLE PIECE OF US</p>
+      <h2 class="main-heading" id="story-heading">Our Story, Our Memories</h2>
+      <p class="supporting-message">
+        Some moments become special because of the people we share them with.<br /><br />
+        Looking back, I'm grateful for the moments we've shared, the memories we've created, the laughter, the lessons, and all the little things that have become part of our story.<br /><br />
+        Here are a few pieces of that story that I want to celebrate with you.
+      </p>
+
+      <!-- Timeline -->
+      <div class="timeline">
+        <article class="timeline-card">
+          <span class="timeline-marker" aria-hidden="true"></span>
+          <p class="timeline-label">THE BEGINNING</p>
+          <h3>Where Our Story Began</h3>
+          <p>Every beautiful story has a beginning.<br /><br />Ours became a part of my life in a way that has given me memories I will always appreciate.<br /><br />When I think about how far we've come, I'm reminded that some people enter your life and gradually become part of your favourite moments.</p>
+        </article>
+        <article class="timeline-card">
+          <span class="timeline-marker" aria-hidden="true"></span>
+          <p class="timeline-label">THE LITTLE THINGS</p>
+          <h3>It's the Little Things</h3>
+          <p>Sometimes, it's not the big occasions that stay with us.<br /><br />It's the conversations, the laughter, the random moments, the little jokes, and the simple feeling of sharing part of your day with someone who matters to you.<br /><br />Those little things are part of what makes our story ours.</p>
+        </article>
+        <article class="timeline-card">
+          <span class="timeline-marker" aria-hidden="true"></span>
+          <p class="timeline-label">GROWING TOGETHER</p>
+          <h3>Still Learning, Still Growing</h3>
+          <p>Being together means that we're both growing, learning, and discovering new things about ourselves and each other.<br /><br />I appreciate the journey we've shared so far, and I hope we continue to approach life with patience, understanding, honesty, and care.</p>
+        </article>
+        <article class="timeline-card">
+          <span class="timeline-marker" aria-hidden="true"></span>
+          <p class="timeline-label">TODAY AND TOMORROW</p>
+          <h3>More Beautiful Moments Ahead</h3>
+          <p>Today, I get to celebrate you and another year of your life.<br /><br />And beyond today, I look forward to the memories we have yet to make, the dreams we will pursue, and the ordinary days that may one day become some of our favourite memories.</p>
+        </article>
+      </div>
+
+      <!-- Photo gallery -->
+      <h2 class="gallery-heading">Little Moments, Big Memories</h2>
+      <p class="gallery-intro">A few moments I'd love to keep close to my heart. ❤️</p>
+      <div class="photo-gallery" id="photo-gallery">
+        <figure class="photo-card" data-caption="One of those moments worth keeping. ❤️">
+          <img src="assets/images/memory-1.jpg" alt="A treasured memory of us — moment one" loading="lazy" />
+          <figcaption>One of those moments worth keeping. ❤️</figcaption>
+        </figure>
+        <figure class="photo-card" data-caption="A memory that still makes me smile.">
+          <img src="assets/images/memory-2.jpg" alt="A treasured memory of us — moment two" loading="lazy" />
+          <figcaption>A memory that still makes me smile.</figcaption>
+        </figure>
+        <figure class="photo-card" data-caption="Just us, being us.">
+          <img src="assets/images/memory-3.jpg" alt="A treasured memory of us — moment three" loading="lazy" />
+          <figcaption>Just us, being us.</figcaption>
+        </figure>
+        <figure class="photo-card" data-caption="Another little piece of our story.">
+          <img src="assets/images/memory-4.jpg" alt="A treasured memory of us — moment four" loading="lazy" />
+          <figcaption>Another little piece of our story.</figcaption>
+        </figure>
+        <figure class="photo-card" data-caption="A moment I wish I could pause.">
+          <video controls muted src="assets/images/memory-5.mp4" alt="A treasured memory of us — moment five" loading="lazy" />
+          <figcaption>A moment I wish I could pause.</figcaption>
+        </figure>
+        <figure class="photo-card" data-caption="Here's to more memories together.">
+          <img src="assets/images/memory-6.jpg" alt="A treasured memory of us — moment six" loading="lazy" />
+          <figcaption>Here's to more memories together.</figcaption>
+        </figure>
+      </div>
+
+      <button class="btn btn-primary" id="btn-to-shoot" type="button">NOW, LET'S CELEBRATE YOU ♡</button>
+      <div class="nav-row">
+        <button class="btn btn-ghost btn-back" type="button">← Back</button>
+      </div>
+    </section>
+
+    <!-- ================= SECTION 4: THE BIRTHDAY SHOOT ================= -->
+    <section class="experience-section section-shoot" data-section="3" id="shoot" aria-labelledby="shoot-heading">
+      <p class="label">AND BECAUSE IT'S YOUR DAY...</p>
+      <h2 class="main-heading" id="shoot-heading">The Birthday Shoot</h2>
+      <p class="supporting-message">
+        You looked absolutely breathtaking — and the world deserves proof. ✨<br /><br />
+        Here are a few of my favourite frames from your birthday photoshoot.
+      </p>
+      <div class="photo-gallery" id="shoot-gallery">
+        <figure class="photo-card" data-caption="Absolutely stunning. As always. ❤️">
+          <img src="assets/images/shoot-1.jpg" alt="ANIKE glowing in her birthday photoshoot — frame one" loading="lazy" />
+          <figcaption>Absolutely stunning. As always. ❤️</figcaption>
+        </figure>
+        <figure class="photo-card" data-caption="The camera loves you — and so do I.">
+          <img src="assets/images/shoot-2.jpg" alt="ANIKE glowing in her birthday photoshoot — frame two" loading="lazy" />
+          <figcaption>The camera loves you — and so do I.</figcaption>
+        </figure>
+        <figure class="photo-card" data-caption="Birthday glow level: unmatched. ✨">
+          <img src="assets/images/shoot-3.jpg" alt="ANIKE glowing in her birthday photoshoot — frame three" loading="lazy" />
+          <figcaption>Birthday glow level: unmatched. ✨</figcaption>
+        </figure>
+        <figure class="photo-card" data-caption="Proof that angels walk among us.">
+          <img src="assets/images/shoot-4.jpg" alt="ANIKE glowing in her birthday photoshoot — frame four" loading="lazy" />
+          <figcaption>Proof that angels walk among us.</figcaption>
+        </figure>
+        <figure class="photo-card" data-caption="My favourite view, honestly.">
+          <img src="assets/images/shoot-5.jpg" alt="ANIKE glowing in her birthday photoshoot — frame five" loading="lazy" />
+          <figcaption>My favourite view, honestly.</figcaption>
+        </figure>
+        <figure class="photo-card" data-caption="Here's to your most beautiful year yet.">
+          <img src="assets/images/shoot-6.jpg" alt="ANIKE glowing in her birthday photoshoot — frame six" loading="lazy" />
+          <figcaption>Here's to your most beautiful year yet.</figcaption>
+        </figure>
+      </div>
+      <p class="gallery-intro shoot-closing">The birthday queen herself. ❤️</p>
+      <button class="btn btn-primary" id="btn-shoot-to-letter" type="button">ONE LAST PERSONAL THING 💌</button>
+      <div class="nav-row">
+        <button class="btn btn-ghost btn-back" type="button">← Back</button>
+      </div>
+    </section>
+
+    <!-- ================= SECTION 5: THE LOVE LETTER ================= -->
+    <section class="experience-section section-letter" data-section="4" id="letter" aria-labelledby="letter-heading">
+      <p class="label">SEALED WITH LOVE</p>
+
+      <!-- Envelope (before opening) -->
+      <div class="envelope-stage" id="envelope-stage">
+        <div class="envelope" aria-hidden="true">
+          <div class="envelope-body"></div>
+          <div class="envelope-letter-peek"></div>
+          <div class="envelope-flap"></div>
+          <div class="envelope-seal">♡</div>
+        </div>
+        <p class="supporting-message envelope-text">I wrote something for you, my love.</p>
+        <button class="btn btn-primary" id="btn-open-letter" type="button">OPEN YOUR LETTER ♡</button>
+      </div>
+
+      <!-- The letter (revealed after opening) -->
+      <article class="letter-card" id="letter-card" hidden tabindex="-1">
+        <div class="letter-paper">
+          <p class="letter-salutation">To my ANIKE, ❤️</p>
+          <p>Happy birthday, my love.</p>
+          <p>I've been thinking about how I could make your birthday special, and I wanted to do something a little different this time.</p>
+          <p>As someone learning to build things with code, I thought, why not use what I'm learning to create something for someone who means so much to me?</p>
+          <p>So here it is: a little corner of the internet made especially for you.</p>
+          <p>It may not be the most expensive gift in the world, but every part of it represents something I wanted to give you: my time, my creativity, my thoughts, and a little piece of my heart.</p>
+          <p>I want you to know that I appreciate you. I appreciate the person you are, the moments we've shared, the laughter, the conversations, and the memories that have become part of our story.</p>
+          <p>Like every real relationship, life isn't always perfect. We are both learning, growing, and figuring things out as we go. But I hope we continue to give each other reasons to smile, to communicate honestly, to understand each other better, and to create beautiful memories along the way.</p>
+          <p>As you begin another year of your life, I pray that you find happiness in the little things, strength when life becomes difficult, peace in your heart, and opportunities that bring you closer to the life you dream of.</p>
+          <p>I hope you never forget that your life has value beyond any relationship. Your dreams matter. Your happiness matters. Your growth matters. And I genuinely want to see you become the person you aspire to be.</p>
+          <p>Thank you for being part of my journey and for giving us memories that I can look back on with a smile.</p>
+          <p>If I could give you one thing today, it would be the ability to see yourself through the eyes of the people who genuinely appreciate you, so you could understand just how much goodness you bring into the world.</p>
+          <p>I'm grateful for the time we've shared, and I look forward to the moments we have yet to experience.</p>
+          <p>Today is your day, ANIKE. Celebrate yourself. Smile a little more. Dream a little bigger. And give yourself permission to enjoy all the beautiful things this new chapter may bring.</p>
+          <p>Happy birthday once again, my love.</p>
+          <p>May this year be kind to you, may your efforts bear fruit, may your heart find peace, and may you always have reasons to smile.</p>
+          <p class="letter-closing">With love, today and always. ❤️</p>
+          <p class="letter-signature">Yours, with love. <span class="beating-heart" aria-hidden="true">❤️</span></p>
+        </div>
+        <button class="btn btn-primary" id="btn-to-final" type="button">THERE'S ONE LAST SURPRISE ♡</button>
+      </article>
+
+      <div class="nav-row">
+        <button class="btn btn-ghost btn-back" type="button">← Back</button>
+      </div>
+    </section>
+
+    <!-- ================= SECTION 6: FINAL SURPRISE ================= -->
+    <section class="experience-section section-final" data-section="5" id="final" aria-labelledby="final-heading">
+      <p class="label label-gold">AND FINALLY, MY LOVE...</p>
+      <h2 class="main-heading heading-gold" id="final-heading">HAPPY BIRTHDAY, ANIKE! <span aria-hidden="true">❤️</span></h2>
+      <p class="final-message">
+        If there's one thing I want you to take away from this little experience, it's this:<br /><br />
+        <strong>You are worth celebrating.</strong><br /><br />
+        Not because of what you do for others, not because of what you achieve, and not because of any particular day on the calendar.<br /><br />
+        You deserve kindness, happiness, respect, peace, and the opportunity to become everything you dream of being.<br /><br />
+        I'm glad I got to create this little surprise for you, and I hope it gave you a reason to smile.<br /><br />
+        Here's to your new chapter, your dreams, your happiness, and all the beautiful moments still waiting for you.
+      </p>
+
+      <div class="gold-divider" aria-hidden="true">✦ ❦ ✦</div>
+
+      <div class="final-card">
+        <p>If I could write a program to explain how much you mean to me, I don't think any programming language would be enough.</p>
+        <p>So instead, I built this little corner of the internet just for you.</p>
+        <p>Every button you clicked, every message you read, and every little detail you explored was part of one simple idea:</p>
+        <p class="final-card-emphasis">To make you smile.</p>
+        <p>Happy birthday, my love. ❤️</p>
+      </div>
+
+      <div class="final-card final-card-soft">
+        <p>I may not have bought you the most expensive gift, but I wanted to give you something that carries my time, my thoughts, my creativity, and a little piece of my heart.</p>
+        <p>I hope you felt the love behind it.</p>
+      </div>
+
+      <div class="final-buttons">
+        <button class="btn btn-gold" id="btn-replay" type="button">REPLAY OUR LITTLE EXPERIENCE ↺</button>
+        <button class="btn btn-outline-gold" id="btn-letter-again" type="button">READ YOUR LETTER AGAIN 💌</button>
+        <button class="btn btn-outline-gold" id="btn-celebrate" type="button">TAKE A MOMENT TO CELEBRATE 🎉</button>
+      </div>
+
+      <footer class="closing-signature">
+        <p>Made with love, a little code, and a lot of thought. ❤️</p>
+        <p>For ANIKE, on her special day.</p>
+        <p class="copyright">© <span id="current-year"></span> — Made especially for ANIKE.</p>
+      </footer>
+    </section>
+
+  </main>
+
+  <!-- Photo lightbox -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer" hidden>
+    <button class="lightbox-close" id="lightbox-close" type="button" aria-label="Close photo viewer">✕</button>
+    <figure class="lightbox-content">
+      <img id="lightbox-img" src="" alt="" />
+      <figcaption id="lightbox-caption"></figcaption>
+    </figure>
+  </div>
+
+  <!-- Confetti container -->
+  <div class="confetti-layer" id="confetti-layer" aria-hidden="true"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
